@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="css/FilterParallax.css"/>
+</head>
+<body>
+<div class="services-container">
+    <svg id="svg"
+         baseProfile="full"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:ev="http://www.w3.org/2001/xml-events"
+         width="100%" height="100%" viewBox="0 0 100 100">
+        <defs>
+            <filter id="fcIn" viewBox="0 0 100 100" width="150%" height="150%">
+                <feImage id="fl" y="0" x="0" result="fl" width="150%" height="150%"
+                         viewBox="0 0 100 100"
+                         xlink:href="images/computer-background.jpg"></feImage>
+                <feComposite in="fl" in2="SourceGraphic" operator="in" viewBox="0 0 100 100"></feComposite>
+            </filter>
+        </defs>
+        <!--<image id="fl" y="0" x="0" result="fl" width="200%" height="200%"
+                 fill="black" viewBox="0 0 180 180"
+                 xlink:href="images/computer-background.jpg"></image>-->
+        <image filter="url(#fcIn)" xlink:href="images/rent.png" x="0" y="0" width="100%" height="100%"
+               viewBox="0 0 180 180"></image>
+        <!--<image class="front-img" xlink:href="images/rent.png" x="0" y="0" width="100%" height="100%"
+               viewBox="0 0 180 180"></image>-->
+    </svg>
+    <div class="text-container">
+        По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+    </div>
+</div>
+<script src="JS/FilterParallax.js"></script>
+</body>
+</html>
